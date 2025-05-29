@@ -1,0 +1,92 @@
+#body{
+    margin-inline: 10%;
+    background-color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.title{
+    text-align: center;
+    font-size: 80px
+}
+
+.title_box{
+    display: flex;
+    background-color: blue;
+    border: 10px outset white;
+    margin-inline: -5%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#nav_box{
+    display: flex;
+    border: 3px solid rgb(60, 190, 255);
+    padding: 10px;
+    position: sticky;
+    top: 0px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.nav_item{
+    color: rgb(243, 60, 255);
+}
+
+
+.larger_text{
+    font-size: larger;
+}
+
+.page_link{
+    position: relative;
+    left: 0px;
+}
+
+.test_border{
+    border: 1px solid white;
+}
+
+.image_box{
+    display: flex;
+    justify-content: center;
+    padding-block: 50px;
+}
+
+.image{
+    display: flex;
+    border: 0.3vw double white;
+    flex-basis: 500px;
+}
+
+#main{
+    background-color: rgba(35, 35, 35, 0.5);
+    padding: 5px;
+}
+
+#main_subtitle{
+    text-align: center;
+    font-size: 45px;
+}
+
+#footer{
+    border: 3px solid blue;
+    padding: 10px;
+    background-color: rgba(0, 0, 255, 0.25);
+}
+
+.footer_box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#form_box{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
