@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subir juego a 1MB Games</title>
+    <link rel="stylesheet" href="../CSS/estilos.css">
+</head>
+<body id="body">
+    
+    <header>
+        <section class="title_box">
+            <img src="../Img/1MB_logo_upscalest.png" alt="logo" width="224px">
+            <span>
+                
+                <h1 class="title">1MB Games</h1>
+            </span>
+        </section>
+    </header>
+    
+    <nav id="nav_box">
+        <section>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="nav_item">Pagina principal (WIP)</a> 
+        </section>
+        <section>
+            <a href="https://github.com/DarkSlayerV201/1MB-Games" class="nav_item">Código abierto</a>
+        </section>
+    </nav>
+
+    <main id="main">
+        <section>
+            <p>
+                Por ahora no hay forma automática de subir tu juego. 
+                Lo que podes hacer es rellenar este pequeño formulario para que revisemos tu juego y 
+                luego subirlo a la página con sus respectivos créditos.
+                <strong>Es importante que el juego este en Github y que pongas el link al repositorio en el mensaje</strong> 
+            </p>
+            <p>
+                Más adelante esto sería, idealmente, más autonomo.
+            </p>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <section class="footer_box">
+            <h3>Subí tu juego!</h3>
+            <form action="https://formspree.io/f/mwpbeean" method="post">
+                <div id="form_box">
+                    <label>
+                        Tu nombre:
+                        <input type="text" name="nombre" placeholder="Tunombre" id="nombre">
+                    </label>
+                    <label>
+                        Tu mail:
+                        <input type="email" name="email" placeholder="tumail_123@yahoo.com" id="email">
+                    </label>
+                    <label>
+                        Tu apodo o nickname de desarrollador:
+                        <input type="text" name="apodo" placeholder="New Name Interactive" id="apodo">
+                    </label>
+                    <label>
+                        Peso del juego (en MB):
+                        <input type="number" name="peso" placeholder="1MB" id="peso">
+                    </label>
+                    <label>
+                        Es para toda la familia?
+                        <select name="restriccionEdad" id="restriccionEdad">
+                            <option value="si">Sí</option>
+                            <option value="no">No</option>
+                            <option value="no_se">No sé</option>
+                        </select>
+                    </label>
+                    <label>
+                        Es para Windows o Linux? 
+                        <select name="plataforma" id="plataforma">
+                            <option value="windows">Windows</option>
+                            <option value="linux">Linux</option>
+                            <option value="ambos">Ambos</option>
+                        </select>
+                    </label>
+                    Si no sabes, aunque sea selecciona la plataforma en donde lo hiciste (ahí corre seguro)
+                    
+                    <h3>Por ultimo, deja una breve descripción del juego</h3>
+                    <textarea name="message" rows="4" placeholder=
+                    "Tenes 500 caracteres máximos, pero no es necesario que los uses todos" 
+                    maxlength="500" id="mensaje"></textarea>
+                    <!-- Código que sería inyectado por JS si en 'peso' recibe entre 1MB y 100MB --
+                    <label>
+                        Se puede hacer que pese menos?
+                        <select>
+                            <option value='si'>Sí</option>
+                            <option value='no'>No</option>
+                            <option value='no_se'>No sé</option>
+                        </select>
+
+                    </label>
+                    <label>
+                        Se puede partir el juego en paquetes instalables para reducir espacio?
+                        <select>
+                            <option value='si'>Sí</option>
+                            <option value='no'>No</option>
+                            <option value='no_se'>No sé</option>
+                        </select>
+                    </label>
+                    -->
+                    <!-- Código que sería inyectado por JS si en 'peso' recibe más de 100MB --
+                    <div>
+                        <p>
+                            En principio, no aceptamos juegos de más de 100MB (eso se puede guardar para el futuro 1GB Games). 
+                            Sin embargo, si así todo pensas que tu juego cumple con la idea de ser un juego que todos puedan jugarlo,
+                            podes detallar un poco por qué pensas que es así
+                        </p>
+                        <textarea name="message" rows="2" placeholder="Aca tenes solo 200 caracteres" maxlength="200"></textarea>
+                    </div>
+                    -->
+                </div>
+                <button type="submit">Enviar</button>
+                <script src="../JS/submit-game.js"></script>
+            </form>
+        </section>
+    </footer>
+    
+</body>
+</html>
