@@ -20,7 +20,7 @@
     
     <nav id="nav_box">
         <section>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="nav_item">Pagina principal (WIP)</a> 
+            <a href="../index.html" class="nav_item">Pagina principal</a> 
         </section>
         <section>
             <a href="https://github.com/DarkSlayerV201/1MB-Games" class="nav_item">Código abierto</a>
@@ -48,7 +48,7 @@
                 <div id="form_box">
                     <label>
                         Tu nombre:
-                        <input type="text" name="nombre" placeholder="Tunombre" id="nombre">
+                        <input type="text" name="nombre" placeholder="Tunombre" id="nombre" max="25">
                     </label>
                     <label>
                         Tu mail:
@@ -56,11 +56,11 @@
                     </label>
                     <label>
                         Tu apodo o nickname de desarrollador:
-                        <input type="text" name="apodo" placeholder="New Name Interactive" id="apodo">
+                        <input type="text" name="apodo" placeholder="New Name Interactive" id="apodo" max="40">
                     </label>
                     <label>
                         Peso del juego (en MB):
-                        <input type="number" name="peso" placeholder="1MB" id="peso">
+                        <input type="number" name="peso" placeholder="1MB" id="peso" maxlength="10">
                     </label>
                     <label>
                         Es para toda la familia?
@@ -88,11 +88,8 @@
                     "Tenes 500 caracteres máximos, pero no es necesario que los uses todos" 
                     maxlength="500" id="mensaje"></textarea>
                 </div>
-                <div id="divBoton">
-                <!----
-                    <button type='submit'>Enviar</button>
-                    -->
-                </div>
+                <div id="divErrores"></div>
+                <div id="divBoton"></div>
                 <script src="../JS/submit-game.js"></script>
             </form>
         </section>
