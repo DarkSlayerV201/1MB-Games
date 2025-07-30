@@ -44,7 +44,7 @@
     <footer id="footer">
         <section class="footer_box">
             <h3>Subí tu juego!</h3>
-            <form action="https://formspree.io/f/mwpbeean" method="post">
+            <form action="https://formspree.io/f/mwpbeean" method="post" id="formularioPadre">
                 <div id="form_box">
                     <label>
                         Tu nombre:
@@ -65,6 +65,7 @@
                     <label>
                         Es para toda la familia?
                         <select name="restriccionEdad" id="restriccionEdad">
+                            <option value="opcion_placeholder">Elija una opción</option>
                             <option value="si">Sí</option>
                             <option value="no">No</option>
                             <option value="no_se">No sé</option>
@@ -73,48 +74,25 @@
                     <label>
                         Es para Windows o Linux? 
                         <select name="plataforma" id="plataforma">
+                            <option value="opcion_placeholder">Elija una opción</option>
                             <option value="windows">Windows</option>
                             <option value="linux">Linux</option>
                             <option value="ambos">Ambos</option>
                         </select>
                     </label>
-                    Si no sabes, aunque sea selecciona la plataforma en donde lo hiciste (ahí corre seguro)
-                    
-                    <h3>Por ultimo, deja una breve descripción del juego</h3>
+                    <label>
+                        Si no sabes, aunque sea selecciona la plataforma en donde lo hiciste (ahí corre seguro)
+                    </label>
+                    <h3 id="tituloMensaje">Por ultimo, deja una breve descripción del juego</h3>
                     <textarea name="message" rows="4" placeholder=
                     "Tenes 500 caracteres máximos, pero no es necesario que los uses todos" 
                     maxlength="500" id="mensaje"></textarea>
-                    <!-- Código que sería inyectado por JS si en 'peso' recibe entre 1MB y 100MB --
-                    <label>
-                        Se puede hacer que pese menos?
-                        <select>
-                            <option value='si'>Sí</option>
-                            <option value='no'>No</option>
-                            <option value='no_se'>No sé</option>
-                        </select>
-
-                    </label>
-                    <label>
-                        Se puede partir el juego en paquetes instalables para reducir espacio?
-                        <select>
-                            <option value='si'>Sí</option>
-                            <option value='no'>No</option>
-                            <option value='no_se'>No sé</option>
-                        </select>
-                    </label>
-                    -->
-                    <!-- Código que sería inyectado por JS si en 'peso' recibe más de 100MB --
-                    <div>
-                        <p>
-                            En principio, no aceptamos juegos de más de 100MB (eso se puede guardar para el futuro 1GB Games). 
-                            Sin embargo, si así todo pensas que tu juego cumple con la idea de ser un juego que todos puedan jugarlo,
-                            podes detallar un poco por qué pensas que es así
-                        </p>
-                        <textarea name="message" rows="2" placeholder="Aca tenes solo 200 caracteres" maxlength="200"></textarea>
-                    </div>
+                </div>
+                <div id="divBoton">
+                <!----
+                    <button type='submit'>Enviar</button>
                     -->
                 </div>
-                <button type="submit">Enviar</button>
                 <script src="../JS/submit-game.js"></script>
             </form>
         </section>
