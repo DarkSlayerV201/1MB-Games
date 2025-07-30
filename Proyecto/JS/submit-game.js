@@ -161,7 +161,7 @@ function validarFloat(campo, idCampo, claveCampo) {
 
 }
 
-function validarSelector(campo, idCampo, claveCampo) {
+function validarSelector(campo, idCampo, claveCampo, agregarEvento = false) {
     let valor = document.getElementById(idCampo)
 
     eliminarMensajeUnico(idCampo.concat("Invalido"))
@@ -175,6 +175,12 @@ function validarSelector(campo, idCampo, claveCampo) {
 
         validarCampos()
     //})
+
+    if (agregarEvento) {
+        valor.addEventListener("change", function() {
+            validarSelector(campo, idCampo, claveCampo)
+        })
+    }
 }
 
 function validarCampos() { 
@@ -204,8 +210,8 @@ peso.addEventListener("keyup", function() {
         else if (peso.value > 10 && peso.value <= 100) {
             preguntarPesoReducible()
             camposValidos["pesoEsValido"] = 0
-            validarSelector('En peso reducible', "selectorMenorPeso", "pesoEsValido")
-            validarSelector('En peso partible', "selectorPartirJuego", "pesoEsValido")
+            validarSelector('En peso reducible', "selectorMenorPeso", "pesoEsValido", true)
+            validarSelector('En peso partible', "selectorPartirJuego", "pesoEsValido", true)
             //camposValidos["pesoEsValido"] = 1
         }
         else if (peso.value > 100) {
