@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1MB Games - Pong For 4</title>
+    <link rel="stylesheet" href="../CSS/estilos.css">
+</head>
+
+<body id="body">
+
+    <header>
+        <section class="title_box">
+            <img src="../Img/1MB_logo_upscalest.png" alt="logo" width="224px">
+            <span>
+                <!---->
+                <h1 class="title">1MB Games</h1>
+            </span>
+        </section>
+    </header>
+
+    <nav id="nav_box">
+        <section>
+            <a href="../index.html" class="nav_item">Pagina principal</a> 
+        </section>
+        <section>
+            <a href="https://github.com/DarkSlayerV201/1MB-Games" class="nav_item">Código abierto</a>
+        </section>
+        <section>
+            <a href="https://github.com/DarkSlayerV201/Pong-For-4" class="nav_item">Descargas</a>
+        </section>
+    </nav>
+
+    <main id="main">
+        <section>
+
+            <div>
+                <h2 id="main_subtitle">Pong for 4</h2>
+                <p class="larger_text">
+                    Por si alguna vez se te ocurrio que podría pasar si hicieran el clasico juego de pong pero para 4 jugadores en vez de 2, 
+                    pues este juego trae la respuesta. Hecho en Python (con Pygame como principal herramienta), este juego trae la gran experiencia pong, pero con un toque caótico.
+
+                </p>
+            </div>
+
+            <div class="image_box">
+                <img src="../Img/Pong_menu.png" alt="Menu principal" width="50%" class="image">
+            </div>
+
+            <div>
+                <h3 class="body-subtitle">Características</h3>
+                <ul class="larger_text">
+                    <li>Permite 4 jugadores</li>
+                    <li>Permite deshabilitar jugadores</li>
+                    <li>Controles simples</li>
+                    <li>No requiere de joysticks ni mandos externos</li>
+                    <li>Contador de victorias</li>
+                    <li>Dificultad progresiva a la duración de la ronda</li>
+                    <li>Victoria por eliminación</li>
+                    <li>
+                        <strong style="color: yellow">Es gratis</strong>
+                    </li>
+                    <li>Es código abierto (el link al final te manda a Github)</li>
+                </ul>
+            </div>
+            
+
+            <div>
+                <h3 class="body-subtitle">Requisitos</h3>
+                <ul class="larger_text">
+                    <li>
+                        Tener 
+                        <a href="https://www.python.org/downloads/" class="link">Python interpreter</a>
+                        descargado
+                    </li>
+                    <li>
+                        Tener
+                        <a href="https://www.pygame.org/download.shtml" class="link">Pygame</a>
+                        descargado
+                    </li>
+                    <li>
+                        Tener una IDE descargada, preferentemente
+                        <a href="https://code.visualstudio.com" class="link">Visual Studio Code</a>
+                    </li>
+                    <li>Tener una ram (probablemente)</li>
+                </ul>
+            </div>
+
+            
+            <h3>Gameplay</h3>
+            <div class="image_box">
+                <video controls poster="../Img/Pong_gameplay.png" width="50%" class="image">
+                    <source src="../Videos/PongFor4Gameplay.mp4" type="video/mp4"></a>
+                </video>
+            </div>
+
+            <h1>Creditos a Lucas Vilche</h1>
+            
+            <div>
+                <h1 class="body-subtitle">
+                    <a href="https://github.com/DarkSlayerV201/Pong-For-4" class="nav_item">Descargas</a>
+                </h1>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <section class="footer_box">
+            <h3>Dejanos tu feedback!</h3>
+            <form action="https://formspree.io/f/mwpbeean" method="post">
+                <div id="form_box">
+                    <label>
+                        Tu nombre:
+                        <input type="text" name="nombre" placeholder="Xxx_TuNombre_xxX" minlength="1">
+                    </label>
+                    <label>
+                        Tu mail:
+                        <input type="email" name="email" placeholder="tumail_123@yahoo.com" minlength="1">
+                    </label>
+                    <textarea name="message" rows="4" placeholder="Tu feedback va acá" minlength="1"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </footer>
+</body>
+
+</html>
