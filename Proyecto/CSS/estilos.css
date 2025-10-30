@@ -57,7 +57,7 @@
     flex-wrap: wrap;
 }
 
-.nav_item{
+.nav_item{ /*Esta clase y '.link' tienen las mismas características, osea que una sobra*/
     color: rgb(243, 60, 255);
 }
 
