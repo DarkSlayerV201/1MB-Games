@@ -21,6 +21,12 @@ function añadirContenido(contenidoTitulo, contenido) {
     mainDiv.appendChild(divPadre);
 }
 
+añadirContenido("Version 0.3 - 31/10/2025", [
+    "Mejoras a nivel de código",
+    "NUEVO: Ahora los personajes no se pueden salir de la pantalla",
+    "Ajustadas medidas y velocidades a la resolución: Ahora se puede cambiar la resolución y la relación de aspecto sin problemas",
+    "FALTA: Que la resolución y los ajustes se puedan acceder desde afuera del código",
+]);
 añadirContenido("Version 0.2.2 - 30/10/2025", [
     "Creadas funciones de clase para evitar repetición y mejorar modularidad",
     "NUEVO: Ahora tenes un mensaje que dice 'Not playing' cuando deshabilitas un personaje",
